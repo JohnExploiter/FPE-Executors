@@ -1,0 +1,44 @@
+lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheNuggetEater05/ekaMiffutSmodnaR/main/EssentialLib", true))()
+local main = lib:CreateMain({title = "FPE Hub", desc = "Da best hub lol"})
+local tab1 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6023426944", title = "Character", desc = "High performance stuff."})
+local tab2 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6022668945", title = "ESP", desc = "Fully-featured ESP"})
+local tab3 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6026568198", title = "Home", desc = " ", ismain = true})
+tab1:AddButton({text = "Rainbow Tag", side = "right", callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnExploiter/Rainbow/refs/heads/main/Rainbowname"))()
+
+
+end})
+tab1:AddButton({text = "Rainbow Potion", side = "left", callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnExploiter/Rainbow/refs/heads/main/Rainbowpotion"))()
+
+end})
+tab1:AddButton({text = "FE Give Player Tools (Soon)", side = "left", callback = function()
+print("Hello, asd world!")
+end})
+tab2:AddButton({text = "Skeleton ESP", side = "left", callback = function()
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/main/UniversalSkeleton.lua"))()
+
+local Skeletons = {}
+for _, Player in next, game.Players:GetChildren() do
+	table.insert(Skeletons, Library:NewSkeleton(Player, true));
+end
+game.Players.PlayerAdded:Connect(function(Player)
+	table.insert(Skeletons, Library:NewSkeleton(Player, true));
+	end)
+end})
+tab2:AddButton({text = "FE Flow Throwables (Soon)", side = "right", callback = function()
+print("Hello, woasdfrld!")
+end})
+tab2:AddToggle({text = "soon", side = "right", callback = function(toggled)
+print(toggled)
+end})
+tab2:AddButton({text = "FE Sound Spam (Soon)", side = "right", callback = function()
+print("Hello, woa23123sdfrld!")
+end})
+tab2:AddSlider({text = "soon", side = "right", min = 16, max = 200, decimals = 1, default = 16, callback = function(val)
+local localplr = game.Players.LocalPlayer
+localplr.Character.Humanoid.WalkSpeed = val
+end})
