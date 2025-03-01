@@ -1,5 +1,5 @@
 lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheNuggetEater05/ekaMiffutSmodnaR/main/EssentialLib", true))()
-local main = lib:CreateMain({title = "FPE Hub", desc = "Da best hub lol"})
+local main = lib:CreateMain({title = "FPE Hub", desc = "Da best hub"})
 local tab1 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6023426944", title = "Character", desc = "High performance stuff."})
 local tab2 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6022668945", title = "ESP", desc = "Fully-featured ESP"})
 local tab3 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6026568198", title = "Home", desc = " ", ismain = true})
@@ -7,14 +7,13 @@ tab1:AddButton({text = "Rainbow Tag", side = "right", callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnExploiter/Rainbow/refs/heads/main/Rainbowname"))()
 
-
 end})
 tab1:AddButton({text = "Rainbow Potion", side = "left", callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnExploiter/Rainbow/refs/heads/main/Rainbowpotion"))()
 
 end})
-tab1:AddButton({text = "FE Give Player Tools (Soon)", side = "left", callback = function()
+tab1:AddButton({text = "FE Give Player Tools", side = "left", callback = function()
 print("Hello, asd world!")
 end})
 tab2:AddButton({text = "Skeleton ESP", side = "left", callback = function()
@@ -29,16 +28,147 @@ game.Players.PlayerAdded:Connect(function(Player)
 	table.insert(Skeletons, Library:NewSkeleton(Player, true));
 	end)
 end})
-tab2:AddButton({text = "FE Flow Throwables (Soon)", side = "right", callback = function()
-print("Hello, woasdfrld!")
+tab2:AddButton({text = "FE Flow Throwables (Beta)", side = "right", callback = function()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/UI-Library/Source.lua"))()
+
+local win = lib:Window("FPE Hub - Spam Tools!",Color3.fromRGB(229,49,90))
+
+local page1 = win:Page("FirstPage","18435547252")
+local page2 = win:Page("SecondPage","18435612533")
+
+local section1 = page1:Section("Tools (Flow)")
+local section2 = page1:Section("Sounds (Annoy)")
+local section3 = page2:Section("???")
+
+section1:Label("Tested by my friends")
+section1:TinyLabel("KASA, Anubus, A3Z, CYN")
+
+section1:Button("Spam Cola",function()
+   while true do
+    local args = {
+    [1] = "Throw_Prop",
+    [2] = game:GetService("Players").LocalPlayer.Character.Soda_Can,
+    [3] = 180,
+    [4] = 0.5,
+    [5] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+    wait(0)
+	end
+end)
+
+section1:Button("Spam Water",function()
+    	while true do
+    local args = {
+    [1] = "Throw_Prop",
+    [2] = game:GetService("Players").LocalPlayer.Character.Water_Bottle,
+    [3] = 180,
+    [4] = 0.5,
+    [5] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+    wait(0.01)
+	end
+end)
+
+section1:Button("Spam Airplanes",function()
+    while true do
+    local args = {
+    [1] = "Throw_Prop",
+    [2] = game:GetService("Players").LocalPlayer.Character.Paper_Plane,
+    [3] = 180,
+    [4] = 0.5,
+    [5] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+    wait(0.01)
+	end
+end)
+
+section1:Button("Spam Paper Ball",function()
+    while true do
+    local args = {
+    [1] = "Throw_Prop",
+    [2] = game:GetService("Players").LocalPlayer.Character.Paper_Ball,
+    [3] = 180,
+    [4] = 0.5,
+    [5] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+    wait(0)
+	end
+end)
+
+section2:Button("Oreo", function()
+ while true do
+local args = {
+    [1] = "Oreo",
+    [2] = game:GetService("Players").LocalPlayer.Character.Oreo,
+    [3] = game:GetService("ReplicatedStorage"):WaitForChild("Sounds"):WaitForChild("Tools"):WaitForChild("Eat"),
+    [4] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+	wait(0)
+	end
+end)
+
+section2:Button("Soap", function()
+while true do
+	local args = {
+    [1] = "Soap",
+    [2] = game:GetService("Players").LocalPlayer.Character.Soap,
+    [3] = game:GetService("ReplicatedStorage"):WaitForChild("Sounds"):WaitForChild("Tools"):WaitForChild("Eat"),
+    [4] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+		wait(0)
+	end
+end)
+
+section1:Toggle("Nice Toggle 1",false,function(state)
+    lib:Notify("Notification",state,3)
+end)
+
+section1:Toggle("Nice Toggle 2",true,function(state)
+    print(state)
+end)
+
+section1:Slider("Nice",1,100,50,function(state)
+
+end)
+
+section2:TextBox("Nice Textbox","0-100",function(state)
+        game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = state
+end)
+
+section2:Dropdown("Nice Dropdown",{"Test","Test","and…Test"},function(state)
+    print(state)
+end)
+
+section2:KeyBind("Nice Keybind",function()
+    print("Binded")
+end)
+
+LoadPage("FirstPage")
+
 end})
-tab2:AddToggle({text = "soon", side = "right", callback = function(toggled)
+tab2:AddToggle({text = "Ruler Text", side = "right", callback = function(toggled)
 print(toggled)
 end})
-tab2:AddButton({text = "FE Sound Spam (Soon)", side = "right", callback = function()
+tab2:AddButton({text = "FE Sound Spam", side = "right", callback = function()
 print("Hello, woa23123sdfrld!")
 end})
-tab2:AddSlider({text = "soon", side = "right", min = 16, max = 200, decimals = 1, default = 16, callback = function(val)
+tab2:AddSlider({text = "hi", side = "right", min = 16, max = 200, decimals = 1, default = 16, callback = function(val)
 local localplr = game.Players.LocalPlayer
 localplr.Character.Humanoid.WalkSpeed = val
 end})
