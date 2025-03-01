@@ -28,7 +28,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 	table.insert(Skeletons, Library:NewSkeleton(Player, true));
 	end)
 end})
-tab2:AddButton({text = "FE Flow Throwables (Beta)", side = "right", callback = function()
+tab2:AddButton({text = "FE Flow Throwables (Done)", side = "right", callback = function()
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/UI-Library/Source.lua"))()
 
 local win = lib:Window("FPE Hub - Spam Tools!",Color3.fromRGB(229,49,90))
