@@ -75,17 +75,17 @@ game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_R
 	end
 end)
 
-section2:Button(”Annoying ass Ruler”, function()
+section2:Button("Ruler", function()
 while true do
-local args = {
+	local args = {
     [1] = "Ruler",
     [2] = game:GetService("Players").LocalPlayer.Character.Ruler,
     [3] = game:GetService("ReplicatedStorage"):WaitForChild("Sounds"):WaitForChild("Tools"):WaitForChild("Ruler")
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
-       wait(0) 
-    end
+		wait(0)
+	end
 end)
 
 section1:Button("Spam Airplanes",function()
