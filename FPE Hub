@@ -71,7 +71,19 @@ section1:Button("Spam Water",function()
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
 
-    wait(0.01)
+    wait(0)
+	end
+end)
+
+section2:Button("Knife", function()
+while true do local args = {
+    [1] = "Knife",
+    [2] = game:GetService("Players").LocalPlayer.Character.Knife,
+    [3] = game:GetService("ReplicatedStorage"):WaitForChild("Sounds"):WaitForChild("Tools"):WaitForChild("Knife_Swing")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+		wait(0)
 	end
 end)
 
@@ -100,7 +112,7 @@ section1:Button("Spam Airplanes",function()
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
 
-    wait(0.01)
+    wait(0)
 	end
 end)
 
@@ -131,6 +143,19 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
 	wait(0)
+	end
+end)
+
+section2:Button("Mobile", function()
+while true do 	
+local args = {
+    [1] = "Mobile",
+    [2] = game:GetService("Players").LocalPlayer.Character.Mobile,
+    [3] = game:GetService("ReplicatedStorage"):WaitForChild("Sounds"):WaitForChild("Tools"):WaitForChild("Mobile_Notification")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+		wait(0)
 	end
 end)
 
