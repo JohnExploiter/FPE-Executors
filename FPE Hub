@@ -28,7 +28,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 	table.insert(Skeletons, Library:NewSkeleton(Player, true));
 	end)
 end})
-tab2:AddButton({text = "FE Flow Throwables (Done)", side = "right", callback = function()
+tab2:AddButton({text = "FE Flow Throwables & A lot More!(Done)", side = "right", callback = function()
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/UI-Library/Source.lua"))()
 
 local win = lib:Window("FPE Hub - Spam Tools and SurfaceGUI's!",Color3.fromRGB(229,49,90))
@@ -36,6 +36,7 @@ local win = lib:Window("FPE Hub - Spam Tools and SurfaceGUI's!",Color3.fromRGB(2
 local page1 = win:Page("FirstPage","18435547252")
 local page2 = win:Page("SecondPage","18435612533")
 local page3 = win:Page("ThirdPage","18426236401")
+local page4 = win:Page("FourthPage","18425066990")
 
 local section1 = page1:Section("Tools (Flow)")
 local section2 = page1:Section("Sounds (Annoy)")
@@ -43,6 +44,7 @@ local section3 = page2:Section("Teachers")
 local section4 = page2:Section("Students")
 local section5 = page3:Section("Students 2")
 local section6 = page3:Section("Students 3")
+local section7 = page4:Section("Space")
 
 section1:Label("Tested by my friends")
 section1:TinyLabel("KASA, Anubus, A3Z, CYN")
