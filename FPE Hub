@@ -31,14 +31,18 @@ end})
 tab2:AddButton({text = "FE Flow Throwables (Done)", side = "right", callback = function()
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/UI-Library/Source.lua"))()
 
-local win = lib:Window("FPE Hub - Spam Tools!",Color3.fromRGB(229,49,90))
+local win = lib:Window("FPE Hub - Spam Tools and SurfaceGUI's!",Color3.fromRGB(229,49,90))
 
 local page1 = win:Page("FirstPage","18435547252")
 local page2 = win:Page("SecondPage","18435612533")
+local page3 = win:Page("ThirdPage","18426236401")
 
 local section1 = page1:Section("Tools (Flow)")
 local section2 = page1:Section("Sounds (Annoy)")
-local section3 = page2:Section("???")
+local section3 = page2:Section("Teachers")
+local section4 = page2:Section("Students")
+local section5 = page3:Section("Students 2")
+local section6 = page3:Section("Students 3")
 
 section1:Label("Tested by my friends")
 section1:TinyLabel("KASA, Anubus, A3Z, CYN")
@@ -173,8 +177,302 @@ game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tools"
 	end
 end)
 
+section3:Button("Miss Thavel", function()
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Thavel"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+end)
+
+section3:Button("Miss Circle", function()
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Circle"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+end)
+
+section3:Button("Miss Bloomie", function()
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Bloomie"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+end)
+
+section3:Button("Miss Emily", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Emily"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section3:Button("Miss Sasha", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Sasha"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section3:Button("Mister Demi", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Mister_Demi"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section3:Button("Miss Grace", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Miss_Grace"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Alice", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Alice"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Oliver", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Oliver"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Zip", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Zip"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Edward", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Edward"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Ruby", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Ruby"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Lana", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Lana"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section4:Button("Lizzy", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Lizzy"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Skell", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Skell"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Robby", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Robby"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Kevin", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Kevin"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Riley", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Riley"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Petunia", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Petunia"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Cubbie", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Cubbie"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section5:Button("Chip", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Chip"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
 section1:Toggle("Nice Toggle 1",false,function(state)
     lib:Notify("Notification",state,3)
+end)
+
+section6:Button("Abbie", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Abbie"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section6:Button("Claire", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Claire"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section6:Button("In hell 😂🙏🏽", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Engel"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
+end)
+
+section6:Button("Bubble Swedish Candy", function()
+
+local args = {
+    [1] = "Trigger_Prompt",
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("Bubble"):WaitForChild("Trigger"):WaitForChild("ProximityPrompt"),
+    [3] = 0.1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Core_Replication"):FireServer(unpack(args))
+
 end)
 
 section1:Toggle("Nice Toggle 2",true,function(state)
