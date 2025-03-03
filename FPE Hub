@@ -1,5 +1,5 @@
 lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheNuggetEater05/ekaMiffutSmodnaR/main/EssentialLib", true))()
-local main = lib:CreateMain({title = "FPE Hub", desc = "Da best hub"})
+local main = lib:CreateMain({title = "FE FPE Hub", desc = "Da best hub"})
 local tab1 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6023426944", title = "Character", desc = "High performance stuff."})
 local tab2 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6022668945", title = "ESP", desc = "Fully-featured ESP"})
 local tab3 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6026568198", title = "Home", desc = " ", ismain = true})
@@ -13,7 +13,7 @@ tab1:AddButton({text = "Rainbow Potion", side = "left", callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnExploiter/Rainbow/refs/heads/main/Rainbowpotion"))()
 
 end})
-tab1:AddButton({text = "FE Give Player Tools", side = "left", callback = function()
+tab1:AddButton({text = "Soon", side = "left", callback = function()
 print("Hello, asd world!")
 end})
 tab2:AddButton({text = "Skeleton ESP", side = "left", callback = function()
@@ -600,11 +600,11 @@ section2:TextBox("Nice Textbox","0-100",function(state)
         game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = state
 end)
 
-section2:Dropdown("Nice Dropdown",{"Test","Test","and…Test"},function(state)
+section7:Dropdown("Nice Dropdown",{"Test","Test","and…Test"},function(state)
     print(state)
 end)
 
-section2:KeyBind("Nice Keybind",function()
+section7:KeyBind("Nice Keybind",function()
     print("Binded")
 end)
 
